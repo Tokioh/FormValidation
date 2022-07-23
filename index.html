@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="formstyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kofla 9 formulario validado</title>
+</head>
+<body>
+    <div id="all-items" class="all">
+        <header>
+            <h1 id=title>Survey form <br>What brand will you be a user of in the next generation?</h1>
+            <p id="description">Thank you for taking the time to help us improve our knowledge.</p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" class='form-control' placeholder="Enter your name" required />
+            </div>
+            <div id="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" name="email" id="email" class='form-control' placeholder="Enter your email" required />
+            </div>
+            <div id="form-group">
+                <label id="number-label" for="number">Age<span>: (opcional)</span></label>
+                <input type="number" name="age" id="number" class='form-control' min="13" max="99" placeholder="age"/>
+            </div>
+            <div id="form-group">
+                <p>what platform do you have ?</p>
+                <div id="checkbox-form">
+                    <label>
+                        <input type="checkbox" value="ps4" name="ps4" class="input-checkbox" checked />Ps4
+                    </label>
+                    <label>
+                        <input type="checkbox" value="xboxo" name="xboxOne" class="input-checkbox" />Xbox One
+                    </label>
+                    <label>
+                        <input type="checkbox" value="nintendoS" name="nintendoswitch" class="input-checkbox" />Nintendo Switch
+                    </label>
+                    <label>
+                        <input type="checkbox" value="ps3" name="ps3" class="input-checkbox" />Ps3
+                    </label>
+                    <label>
+                        <input type="checkbox" value="xbox 360" name="xbox360" class="input-checkbox" />Xbox 360
+                    </label>
+                    <label>
+                        <input type="checkbox" value="wii u" name="wiiU" class="input-checkbox" />Wii U
+                    </label>
+                    <label>
+                        <input type="checkbox" value="mobile" name="mobile" class="input-checkbox" />Mobile
+                    </label><label>
+                        <input type="checkbox" value="pc" name="pc" class="input-checkbox" />PC
+                    </label>
+                    <label>
+                        <input type="checkbox" value="other" name="other" class="input-checkbox" />Other
+                    </label>
+                </div>
+            </div>
+            <div id="form-group">
+                <p>What is the platform you use the most?</p>
+                <select name="most-use" id="dropdown" class='form-control' required>
+                <option disabled selected value>Select a option</option>
+                <option value="pc">PC</option>
+                <option value="playstation-4">Playstation 4</option>
+                <option value="xbox-one">Xbox One</option>
+                <option value="nintendo-switch">Nintendo Switch</option>
+                <option value="movil">Mobile Games</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div id="form-group">
+                <p>How many friends do you know who play on your same platform?</p>
+                <div id="radio-form">
+                    <label>
+                    <input name="friends-pet" value="1-3" type="radio" class="input-radio" checked />1-3</label>
+                    <label>
+                        <input name="friends-pet" value="4-7" type="radio" class="input-radio" />4-7</label>
+                    <label>
+                        <input name="friends-pet" value="8-more" type="radio" class="input-radio" />8-more</label>
+                </div>
+            </div>
+            <div id="form-group">
+                <p>What do you appreciate most about your platform?</p>
+                <textarea id="coment" class="input-textarea" name="petDescription" placeholder="tell us about your tastes"></textarea>
+            </div>
+            <div id="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+    <script src="formValidation.js"></script>
+</body>
+</html>
