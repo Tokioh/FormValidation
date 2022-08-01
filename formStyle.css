@@ -154,3 +154,10 @@ form {
     cursor: pointer;
     border: none;
 }
+
+.green {
+    color:#20e41dcc;
+}
+.red {
+    color: #ff1515;
+}
