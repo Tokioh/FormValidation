@@ -13,7 +13,7 @@
             <h1 id=title>Survey form <br>What brand will you be a user of in the next generation?</h1>
             <p id="description">Thank you for taking the time to help us improve our knowledge.</p>
         </header>
-        <form id="survey-form">
+        <form name="myForm" id="survey-form">
             <div id="form-group">
                 <label id="name-label" for="name">Name:</label>
                 <input type="text" name="name" id="name" class='form-control' placeholder="Enter your name" required />
@@ -74,19 +74,22 @@
                 <p>How many friends do you know who play on your same platform?</p>
                 <div id="radio-form">
                     <label>
-                    <input name="friends-pet" value="1-3" type="radio" class="input-radio" checked />1-3</label>
+                    <input name="friendsNumber" value="1-3" type="radio" class="input-radio" checked />1-3</label>
                     <label>
-                        <input name="friends-pet" value="4-7" type="radio" class="input-radio" />4-7</label>
+                        <input name="friendsNumber" value="4-7" type="radio" class="input-radio" />4-7</label>
                     <label>
-                        <input name="friends-pet" value="8-more" type="radio" class="input-radio" />8-more</label>
+                        <input name="friendsNumber" value="8-more" type="radio" class="input-radio" />8-more</label>
                 </div>
             </div>
             <div id="form-group">
                 <p>What do you appreciate most about your platform?</p>
-                <textarea id="coment" class="input-textarea" name="petDescription" placeholder="tell us about your tastes"></textarea>
+                <textarea id="comment" class="input-textarea" name="commentDescripticon" placeholder="tell us about your tastes"></textarea>
             </div>
             <div id="form-group">
                 <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+            <div id="result">
+                
             </div>
         </form>
     </div>
